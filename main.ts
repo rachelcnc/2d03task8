@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    if (0 == 0) {
+    if (input.compassHeading() == 0) {
         basic.showString("N")
     }
     if (input.compassHeading() == 90) {
@@ -25,7 +25,4 @@ input.onButtonPressed(Button.B, function () {
     if (input.compassHeading() >= 225 && input.compassHeading() < 315) {
         basic.showString("W")
     }
-})
-basic.forever(function () {
-	
 })
